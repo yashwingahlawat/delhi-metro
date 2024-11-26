@@ -1,0 +1,118 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delhi Loco</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="icon" href="/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+
+    {{! Alerts }}
+    <script
+      src="
+			https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.min.css"
+      rel="stylesheet"
+    />
+
+  </head>
+
+  <body>
+    <div class="wrapper">
+
+      <div class="header">
+
+        <div class="container-navbar" id="cont-nav">
+          {{>nav}}
+        </div>
+
+        <div class="container">
+          <div class="main-section">
+            <div class="main-section-part1">
+              <h3>METRO ROUTE NAVIGATOR</h3>
+            </div>
+
+            <div class="main-section-part2">
+              <div class="heading">
+                <div class="main-sectionpart2-heading">FIND YOUR ROUTE</div>
+
+                <div class="backspace">
+                  <span class="role"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="main-section-part3">
+
+              <div class="input1">
+
+                <input
+                  class="source"
+                  type="text"
+                  name="myStation"
+                  placeholder="SELECT SOURCE"
+                  id="source1"
+                />
+                <ul id="station-list-1" class="dropdown">
+
+                </ul>
+              </div>
+
+              <div class="input2">
+                <input
+                  href="#"
+                  class="dest"
+                  type="text"
+                  name="myStation"
+                  placeholder="SELECT DESTINATION"
+                  id="source2"
+                />
+
+                <ul id="station-list-2" class="dropdown">
+
+                </ul>
+
+              </div>
+              <button class="btn-pink" href="#thelist" id="routeButton">
+                FIND ROUTE</button>
+
+            </div>
+            <script src="/js/FrontendEffect.js"></script>
+
+          </div>
+        </div>
+        <div class="loading-container">
+          <div class="loading" id="loading-bar"></div>
+        </div>
+        <div class="display-metro-stations" id="content">
+
+          <h1 id="path"></h1>
+          <div id="thelist">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <script
+      src="https://kit.fontawesome.com/00775a0389.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/script.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,118 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delhi Loco</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/img/favicon.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="./css/style(about).css" />
+  {{!
+  <link rel="stylesheet" href="./css/style.css"> }}
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <div class="header">
+      <div class="container-navbar" id="cont-nav">
+        {{>nav}}
+      </div>
+    </div>
+
+    <div class="introduction">
+
+      <div class="intro-text">
+        <div class="intropart1">
+          <h1>Introduction</h1>
+        </div>
+
+        <div class="part2">
+          <div class="para">
+            Delhi Loco allows users to plan their route from one destination
+            to another with ease. The process of showing a route from one path
+            to another is made simple through the use of intelligent
+            algorithms. Users simply enter their starting point and desired
+            destination, and the system calculates the quickest and most
+            efficient route for them to take. The route is displayed showing
+            each metro station, along with information about the estimated
+            travel time and any transfer points along the way. The time
+            calculation takes into account various factors such as, the number
+            of stops along the route, and the expected time it takes to travel
+            between each stop.
+          </div>
+        </div>
+
+        <div class="intropart3">
+          <div class="para">
+            <Disclaimer>
+              <b id="color-red">Disclaimer:</b>
+              The information provided by the website i.e. timings, and route,
+              is indicative and subject to change. Commuters are advised to
+              plan their journey in advance as actual journey time may vary as
+              per the prevailing conditions. We will not be liable for any
+              direct or indirect loss (of any nature whatsoever) arising from
+              the material contained in this website.
+            </Disclaimer>
+          </div>
+        </div>
+      </div>
+      <div class="intro-image">
+        <img src="./img/metro_screenshot.png" alt="Metro Project" class="metroimg" />
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+
+    <div class="tech-stack">
+      <h2>Tech Stack Used</h2>
+      <div class="skills-container">
+        <img title="HTML" src="./img/HTML.png" alt="" class="skills-logo" />
+        <img title="CSS" src="./img/CSS.png" alt="" class="skills-logo" />
+        <img title="Javascript" src="./img/Javascript.svg" alt="" class="skills-logo" />
+        <img title="ExpessJs" src="./img/Express.png" alt="" class="skills-logo" />
+        <img title="NodeJS" src="./img/NodeJs.svg" alt="" class="skills-logo" />
+
+      </div>
+    </div>
+
+    <!-- Developers -->
+    <div class="developers">
+      <h2>Our Developer</h2><br />
+      <div class="information">
+
+        <div class="dev1">
+          <h4>Yashwin Gahlawat</h4>
+          <p>Full Stack Developer</p>
+          <div class="icon-wrapperinfo">
+            <a href="https://www.linkedin.com/in/yashwin-gahlawat-44a561222/" class="footer-icon-link" target="_blank">
+              <i class="fa-brands fa-linkedin icon"></i></a>
+            <a href="https://instagram.com/yashwingahlawat/" class="footer-icon-link" target="_blank"><i
+                class="fa-brands fa-instagram icon"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/00775a0389.js" crossorigin="anonymous"></script>
+  <script>
+    function displayLines() {
+      var x = document.getElementById("myDIV"); var x2
+        = document.getElementById("cont-nav"); if (x.style.display === "block") {
+          x.style.display = "none"; x2.style.marginBottom = "3rem";
+        } else {
+        x.style.display = "block"; x2.style.marginBottom = "10rem";
+      }
+    }
+
+  </script>
+
+</body>
+
+</html>

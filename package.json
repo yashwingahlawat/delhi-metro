@@ -1,0 +1,26 @@
+{
+  "name": "dmrc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node src/app.js -e js,hbs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayank5102002/Delhi_Metro_Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayank5102002/Delhi_Metro_Project/issues"
+  },
+  "homepage": "https://github.com/mayank5102002/Delhi_Metro_Project#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "firebase-admin": "^11.5.0",
+    "hbs": "^4.2.0"
+  }
+}
